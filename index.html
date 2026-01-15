@@ -3,380 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiritpol Nukhongkha | AI Engineer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Wiritpol Nukhongkha | AI Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="animated-bg"></div>
-    <div class="particles"></div>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">OHM.AI</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+    <header>
+        <nav>
+            <div class="logo">OHM<span>.AI</span></div>
+            <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section id="hero">
         <div class="hero-content">
-            <div class="hero-badge">👋 Welcome to my Portfolio</div>
-            <h1>WIRITPOL NUKHONGKHA</h1>
-            <p class="subtitle">AI Engineering Student • Machine Learning Enthusiast</p>
-            <p class="description">นักศึกษาชั้นปีที่ 4 สาขาวิศวกรรมปัญญาประดิษฐ์<br>มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่</p>
-            
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i> View My Work
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i> Get In Touch
-                </a>
-            </div>
-
-            <div class="social-links">
-                <a href="mailto:ohmnukongka@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/wiritpol-nukhongkha" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Wiritpol" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <h1>สวัสดีครับผม <span class="highlight">วิริทธิ์พล หนูคงคา</span></h1>
+            <h2>ผมเรียนเกี่ยวกับการสร้าง <span class="typing-text">"สมอง" ให้คอมพิวเตอร์</span></h2>
+            <p>นักศึกษาชั้นปีที่ 4 คณะวิศวกรรมศาสตร์ สาขาวิชาวิศวกรรมปัญญาประดิษฐ์ มหาวิทยาลัยสงขลานครินทร์</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">ดูผลงาน</a>
+                <a href="#contact" class="btn secondary">ติดต่องาน</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section-light">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-badge">About Me</span>
-                <h2 class="section-title">Who Am I?</h2>
-                <p class="section-subtitle">Passionate about creating intelligent systems that solve real-world problems</p>
+    <section id="about">
+        <h2 class="section-title">วิศวกรรมปัญญาประดิษฐ์ คืออะไร?</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fas fa-brain"></i>
+                <h3>Learn</h3>
+                <p>สอนให้คอมพิวเตอร์รู้จักและเข้าใจข้อมูลมหาศาล</p>
             </div>
+            <div class="about-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Analyze</h3>
+                <p>ค้นหารูปแบบที่ซ่อนอยู่เพื่อทำนายผลลัพธ์หรือตัดสินใจ</p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-robot"></i>
+                <h3>Build</h3>
+                <p>สร้างระบบอัจฉริยะ เช่น Chatbot หรือระบบแนะนำสินค้า</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="about-grid">
-                <div class="about-image animate-on-scroll">
-                    <div class="profile-placeholder">
-                        <img src="static/images/profile.jpg" alt="Profile" onerror="this.style.display='none'; this.parentElement.innerHTML='🤖';">
-                    </div>
+    <section id="skills">
+        <h2 class="section-title">ทักษะและความสามารถ</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                    <span>Python</span> <span>C++</span> <span>C</span> <span>HTML/CSS</span> <span>SQL</span>
                 </div>
-
-                <div class="about-content animate-on-scroll">
-                    <h3>Hello! I'm Ohm</h3>
-                    <p>ผมคือนักศึกษาสาขาวิศวกรรมปัญญาประดิษฐ์ที่หลงใหลในการพัฒนาระบบ AI ที่สามารถเปลี่ยนแปลงโลกได้ ด้วยความสนใจในทั้ง Machine Learning, Deep Learning, Computer Vision และ Natural Language Processing</p>
-
-                    <div class="highlight-box">
-                        <h4>🎯 สิ่งที่ฉันทำ</h4>
-                        <div class="highlight-item">
-                            <i class="fas fa-brain"></i>
-                            <div>
-                                <strong>Learn</strong> - สอนคอมพิวเตอร์ให้เรียนรู้และเข้าใจข้อมูลมหาศาล
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <strong>Analyze</strong> - วิเคราะห์และค้นหารูปแบบที่ซ่อนอยู่ในข้อมูล
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-cogs"></i>
-                            <div>
-                                <strong>Build</strong> - สร้างระบบอัจฉริยะที่แก้ปัญหาได้จริง
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>ด้วยประสบการณ์จากโปรเจกต์หลากหลายรูปแบบ ตั้งแต่การพัฒนา Chatbot, ระบบ OCR, ไปจนถึงการทำ Predictive Analytics ผมพร้อมที่จะนำความรู้เหล่านี้ไปสร้างสรรค์สิ่งใหม่ๆ</p>
+            </div>
+            <div class="skill-category">
+                <h3>AI / ML Specialist</h3>
+                <div class="skill-tags">
+                    <span>Machine Learning</span> <span>Deep Learning</span> <span>Computer Vision</span> <span>NLP</span> <span>OCR</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skill-tags">
+                    <span>Git</span> <span>Docker</span> <span>TensorFlow/PyTorch</span> <span>Linux</span> <span>Cybersecurity</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section-dark">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-badge">My Arsenal</span>
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">Tools and technologies I use to bring ideas to life</p>
+    <section id="projects">
+        <h2 class="section-title">ผลงานที่ภาคภูมิใจ</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>พยากรณ์การ Drop out ของนักศึกษา</h3>
+                    <p>โมเดล Deep Learning สำหรับทำนายโอกาสที่นักศึกษาจะพ้นสภาพจากปัจจัยต่างๆ ในรูปแบบ Dashboard</p>
+                    <a href="https://gitlab.com/ohmnukongka/group4-dashboard.git" target="_blank" class="project-link">ดูรายละเอียด <i class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
-
-            <div class="skills-grid">
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon">💻</div>
-                    <h3>Programming</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">C</span>
-                        <span class="tag">HTML/CSS</span>
-                    </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Sum4you</h3>
+                    <p>ระบบ AI แปลงลิงก์วิดีโอ YouTube เป็นเนื้อหาสรุปที่อ่านง่าย ประหยัดเวลาในการเข้าถึงข้อมูลสำคัญ</p>
                 </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon">🤖</div>
-                    <h3>AI & ML</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Deep Learning</span>
-                        <span class="tag">Computer Vision</span>
-                        <span class="tag">NLP</span>
-                        <span class="tag">OCR</span>
-                    </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>AI RECOMMENDATION ANIME</h3>
+                    <p>LINE Chatbot แนะนำอนิเมะโดยใช้เทคโนโลยี AI Semantic Search และ Graph Database (Neo4j)</p>
                 </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon">📚</div>
-                    <h3>Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">Scikit-learn</span>
-                        <span class="tag">Pandas</span>
-                    </div>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon">🗄️</div>
-                    <h3>Data & Database</h3>
-                    <div class="skill-tags">
-                        <span class="tag">SQL</span>
-                        <span class="tag">Data Preprocessing</span>
-                        <span class="tag">Visualization</span>
-                    </div>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon">🛠️</div>
-                    <h3>Tools</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Jupyter</span>
-                        <span class="tag">Colab</span>
-                    </div>
-                </div>
-
-                <div class="skill-card animate-on-scroll">
-                    <div class="skill-icon">🔒</div>
-                    <h3>Additional</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Cybersecurity</span>
-                        <span class="tag">HPC</span>
-                        <span class="tag">OOP</span>
-                    </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Math OCR System</h3>
+                    <p>ระบบอ่านโจทย์คณิตศาสตร์จากรูปภาพและตรวจสอบความถูกต้องอัตโนมัติ เพื่อช่วยลดภาระงานครู</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section-light">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-badge">Portfolio</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work that I'm proud of</p>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card animate-on-scroll">
-                    <div class="project-image">
-                        <img src="static/images/project1.jpg" alt="Student Dropout" onerror="this.style.display='none';">
-                        <span class="emoji">🎓</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Student Dropout Prediction</h3>
-                        <p class="project-desc">ระบบทำนายความเสี่ยงในการถูกไล่ออกของนักศึกษาด้วย Deep Learning พร้อม Dashboard แบบ Interactive</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Deep Learning</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Dashboard</span>
-                        </div>
-                        <a href="https://gitlab.com/ohmnukongka/group4-dashboard.git" target="_blank" class="project-link">
-                            View Project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-image">
-                        <img src="static/images/project2.jpg" alt="Sum4you" onerror="this.style.display='none';">
-                        <span class="emoji">📹</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sum4you</h3>
-                        <p class="project-desc">AI-powered YouTube Video Summarizer ที่แปลงวิดีโอเป็นข้อความที่อ่านง่าย ช่วยประหยัดเวลาในการเรียนรู้</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">API</span>
-                            <span class="tech-tag">Web App</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            Learn More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-image">
-                        <img src="static/images/project3.jpg" alt="Math OCR" onerror="this.style.display='none';">
-                        <span class="emoji">🔢</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Math OCR System</h3>
-                        <p class="project-desc">ระบบอ่านโจทย์คณิตศาสตร์จากภาพและตรวจคำตอบอัตโนมัติ เพิ่มประสิทธิภาพการเรียนการสอน</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">OCR</span>
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">TensorFlow</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            Learn More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-image">
-                        <img src="static/images/project4.jpg" alt="Anime Recommender" onerror="this.style.display='none';">
-                        <span class="emoji">🎌</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Anime Recommender</h3>
-                        <p class="project-desc">Chatbot บน LINE ที่ใช้ AI Semantic Search และ Graph Database แนะนำอนิเมะที่ตรงใจ</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">LINE Bot</span>
-                            <span class="tech-tag">Semantic Search</span>
-                            <span class="tech-tag">Graph DB</span>
-                        </div>
-                        <a href="#" class="project-link">
-                            Learn More <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card animate-on-scroll">
-                    <div class="project-image">
-                        <img src="static/images/project5.jpg" alt="Drawing App" onerror="this.style.display='none';">
-                        <span class="emoji">🎨</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Drawing Application</h3>
-                        <p class="project-desc">โปรแกรมวาดรูปแบบ Paint พัฒนาด้วย C++ สำหรับฝึกทักษะ Programming และ UI Design</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">GUI</span>
-                            <span class="tech-tag">Graphics</span>
-                        </div>
-                        <a href="https://github.com/Wiritpol/DrawApp" target="_blank" class="project-link">
-                            View Code <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section id="contact">
+        <h2 class="section-title">ช่องทางการติดต่อ</h2>
+        <div class="contact-links">
+            <a href="mailto:ohmnukongka@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://www.linkedin.com/in/wiritpol-nukhongkha" target="_blank" class="contact-item">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Wiritpol" target="_blank" class="contact-item">
+                <i class="fab fa-github"></i> GitHub
+            </a>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section-dark">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-badge">Education</span>
-                <h2 class="section-title">Academic Journey</h2>
-                <p class="section-subtitle">My path in Artificial Intelligence Engineering</p>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>🎓 วิศวกรรมปัญญาประดิษฐ์</h3>
-                        <p class="year">2021 - Present (Year 4)</p>
-                        <p>มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่</p>
-                        <p style="margin-top: 15px; opacity: 0.8;">เรียนรู้การพัฒนาระบบ AI ตั้งแต่พื้นฐานจนถึงขั้นสูง พร้อมประสบการณ์จริงจากโปรเจกต์หลากหลาย</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>📚 Key Courses</h3>
-                        <ul style="margin-top: 15px; line-height: 2; opacity: 0.9;">
-                            <li>• Machine Learning & Deep Learning</li>
-                            <li>• Computer Vision</li>
-                            <li>• Natural Language Processing</li>
-                            <li>• AI for Robot Controlling</li>
-                            <li>• Cybersecurity</li>
-                            <li>• High-Performance Computing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-light">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-badge">Get In Touch</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-card animate-on-scroll">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <a href="mailto:ohmnukongka@gmail.com">ohmnukongka@gmail.com</a>
-                </div>
-
-                <div class="contact-card animate-on-scroll">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/wiritpol-nukhongkha" target="_blank">Wiritpol Nukhongkha</a>
-                </div>
-
-                <div class="contact-card animate-on-scroll">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/Wiritpol" target="_blank">@Wiritpol</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">OHM.AI</div>
-            <div class="social-links">
-                <a href="mailto:ohmnukongka@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/wiritpol-nukhongkha" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Wiritpol" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-            </div>
-            <p class="footer-text">© 2024 Wiritpol Nukhongkha. Crafted with ❤️ and Python</p>
-        </div>
+        <p>© 2026 Wiritpol Nukhongkha. All Rights Reserved.</p>
     </footer>
 
-    <div class="back-to-top" onclick="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
